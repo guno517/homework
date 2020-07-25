@@ -17,6 +17,7 @@ for tr in trs:
     title = tr.select_one('td.info > a').text.strip()
     artist = tr.select_one('td.info > a.artist').text
     print(rank, title, artist)
+    #mongodb에 넣기
     doc = {
         "rank": rank,
         "title": title,
