@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>나 홀로 상점</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Nanum+Pen+Script&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        .wrap {
+            margin: auto;
+            width: 500px;
+        }
+
+        .img {
+            background-image: url("https://littledeep.com/wp-content/uploads/2019/05/littledeep_sky_style1.png");
+            background-size: cover;
+            background-position: center;
+            width: 500px;
+            height: 500px;
+        }
+
+        * {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        .info {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1, h4 {
+            display: inline;
+        }
+
+        .btn {
+            text-align: center;
+        }
+        .order{
+            text-align: center;
+        }
+        .input-group-text{
+            background-image: url("https://littledeep.com/wp-content/uploads/2019/05/littledeep_sky_style1.png");
+            background-size: auto;
+        }
+    </style>
+    <script>
+        function alarm() {
+            alert('주문이 완료되었습니다!');
+        }
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="img"></div>
+    <div class="info">
+        <h1>구름을 팝니다</h1>
+        <h4>가격: 3000원/개당</h4>
+        <p>이 구름은 사실 특별한 힘을 가지고 있어요. 물건을 사가시면</p>
+    </div>
+    <div class="info">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주문자이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Username"
+                   aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">수량</span>
+            </div>
+            <select class="custom-select" id="order-count">
+                <option selected="" value=""> -- 수량을 선택하세요 --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Username"
+                   aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Username"
+                   aria-describedby="basic-addon1">
+        </div>
+        <div class="order">
+            <button onclick="alarm()" type="button" class="btn btn-primary"><img src=https://littledeep.com/wp-content/uploads/2019/05/littledeep_sky_style1.png" alt="">주문하기</button>
+        </div>
+    </div>
+    <div class="order">
+        <table class ="table">
+            <thread>
+                <tr>
+                    <th scpoe="col">주문자이름</th>
+                    <th scpoe="col">수량</th>
+                    <th scpoe="col">주소</th>
+                    <th scpoe="col">전화번호</th>
+                </tr>
+            </thread>
+            <tborad>
+                <tr>
+                    <td>건오</td>
+                    <td>2</td>
+                    <td>경기도</td>
+                    <td>010-1111-2222</td>
+                </tr>
+            </tborad>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
